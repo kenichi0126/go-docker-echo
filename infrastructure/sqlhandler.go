@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Le0tk0k/go-rest-api/interfaces/database"
+	"github.com/kenichi0126/go-docker-echo/interfaces/database"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )

@@ -3,18 +3,18 @@ package controllers
 import (
 	"strconv"
 
-	"github.com/Le0tk0k/go-rest-api/domain"
-	"github.com/Le0tk0k/go-rest-api/interfaces/database"
-	"github.com/Le0tk0k/go-rest-api/usecase"
+	"github.com/kenichi0126/go-docker-echo/domain"
+	"github.com/kenichi0126/go-docker-echo/interfaces/database"
+	"github.com/kenichi0126/go-docker-echo/usecases"
 )
 
 type UserController struct {
-	Interactor usecase.UserInteractor
+	Interactor usecases.UserInteractor
 }
 
 func NewUserController(sqlHandler database.SqlHandler) *UserController {
 	return &UserController{
-		Interactor: usecase.UserInteractor{
+		Interactor: usecases.UserInteractor{
 			UserRepository: &database.UserRepository{
 				SqlHandler: sqlHandler,
 			},

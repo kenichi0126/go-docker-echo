@@ -1,6 +1,6 @@
-package usecase
+package usecases
 
-import "github.com/Le0tk0k/go-rest-api/domain"
+import "github.com/kenichi0126/go-docker-echo/domain"
 
 type UserRepository interface {
 	FindByID(id int) (domain.User, error)

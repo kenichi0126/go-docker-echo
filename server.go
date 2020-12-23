@@ -1,6 +1,6 @@
 package main
 
-import "github.com/Le0tk0k/go-rest-api/infrastructure"
+import "github.com/kenichi0126/go-docker-echo/infrastructure"
 
 func main() {
 	infrastructure.Init()

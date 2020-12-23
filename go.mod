@@ -1,4 +1,4 @@
-module github.com/Le0tk0k/go-rest-api
+module github.com/kenichi0126/go-docker-echo
 
 go 1.14
 

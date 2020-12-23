@@ -3,15 +3,15 @@ services:
   db:
     build: 
       context: .
-      dockerfile: ./docker/mysql/Dockerfile
+      dockerfile: docker/database/Dockerfile
     ports: 
       - "3306:3306"
     volumes: 
-      - ./docker/mysql/db:/docker-entrypoint-initdb.d
-      - ./docker/mysql/db/mysql_data:/var/lib/mysql
+      - ./docker/database/db:/docker-entrypoint-initdb.d
+      - ./docker/database/db/mysql_data:/var/lib/mysql
     environment: 
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: go_rest_api
+      MYSQL_DATABASE: go_docker_echo
       MYSQL_USER: user
       MYSQL_PASSWORD: password
 
@@ -20,7 +20,7 @@ services:
       context: .
       dockerfile: ./docker/api/Dockerfile
     volumes: 
-      - ./:/go/src/github.com/Le0tk0k/go-rest-api
+      - ./:/go/src/github.com/kenichi0126/go-docker-echo
     ports: 
       - "8080:8080"
     depends_on:

@@ -2,7 +2,7 @@ FROM golang:1.14
 
 ENV GO111MODULE=on
 
-WORKDIR /go/src/github.com/Le0tk0k/go-rest-api
+WORKDIR /go/src/github.com/kenichi0126/go-docker-echo
 
 COPY go.mod go.sum ./
 RUN go mod download

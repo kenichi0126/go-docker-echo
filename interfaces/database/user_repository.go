@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/Le0tk0k/go-rest-api/domain"
+	"github.com/kenichi0126/go-docker-echo/domain"
 )
 
 type UserRepository struct {

@@ -1,7 +1,7 @@
 package infrastructure
 
 import (
-	"github.com/Le0tk0k/go-rest-api/interfaces/controllers"
+	"github.com/kenichi0126/go-docker-echo/interfaces/controllers"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
